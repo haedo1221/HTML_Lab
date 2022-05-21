@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            display: inline-block;
+            border: 1px solid black;
+        }
+
+        .box1 {
+            position: static;
+            background-color: red;
+            z-index: 2;
+        }
+
+        .box2 {
+            position: absolute;
+            background-color: yellow;
+            top: 0px;
+            left: 3px;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        box1
+    </div>
+    <div>
+        <div class="box2">
+            box2
+        </div>
+    </div>
+    <div class="box3">
+        box3
+    </div>
+</body>
+
+</html>
